@@ -9,6 +9,7 @@ const socketIo = require("socket.io")(server, {
   },
 });
 // nhớ thêm cái cors này để tránh bị Exception nhé :D  ở đây mình làm nhanh nên cho phép tất cả các trang đều cors được.
+console.log("Server is running");
 
 socketIo.on("connection", (socket) => {
   ///Handle khi có connect từ client tới
